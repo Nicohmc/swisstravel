@@ -39,3 +39,9 @@ No build tools, accounts, frameworks or backend are needed.
 將此資料夾中的 `index.html`、`style.css`、`script.js` 和 `assets/winter-map.png` 上傳覆蓋原檔，或直接保留圖片、僅替換前三個檔案。
 
 筆記使用既有的 `swiss-winter-notes-v1` localStorage key，原瀏覽器資料可繼續使用；保險起見，可先從舊版網站匯出筆記 JSON 做備份。
+
+## V3 — Glowing arrows, invisible circular hit areas
+
+The orange circular outlines and VIEW TOWN badge have been removed. Each illustrated town now shows a glowing blue-white arrow, but the **entire original circular photo** remains a clickable button. On hover/focus the arrow brightens; the selected town keeps a brighter arrow. All data and note storage are unchanged.
+
+To adjust arrow styling, edit `.town-photo::after` in `style.css`. To adjust the clickable circle size and position, edit `x`, `y`, `diameter` in `script.js`.

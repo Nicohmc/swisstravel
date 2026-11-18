@@ -19,3 +19,23 @@ A static GitHub Pages website with seven clickable towns on an illustrated Swiss
 - The illustrated map is decorative and not geographically exact. Train times are estimates; check SBB before travel.
 
 No build tools, accounts, frameworks or backend are needed.
+
+
+## V2 — 整張圓形城鎮圖片都可點擊
+
+地圖上七個城鎮的**插畫圓形照片**現在是透明的互動按鈕，不再需要對準原本的小圓點。滑鼠滑過會出現高亮外框及 VIEW TOWN，選取會保留橙色圓環。點選後，資訊、注意事項、私人筆記及匯入／匯出功能皆維持原樣。手機點擊後會捲動至資訊面板。
+
+### 自訂按鈕位置
+
+若更換底圖，可編輯 `script.js` 裡 `TOWNS` 的 `x`、`y`、`diameter`：
+- `x`：圓形照片中心點，佔圖片寬度的百分比。
+- `y`：圓形照片中心點，佔圖片高度的百分比。
+- `diameter`：照片圓的直徑，佔圖片寬度的百分比。
+
+此版位置是依照專案內 `assets/winter-map.png`（1055 × 1491 像素）調整。
+
+### 更新 GitHub Pages
+
+將此資料夾中的 `index.html`、`style.css`、`script.js` 和 `assets/winter-map.png` 上傳覆蓋原檔，或直接保留圖片、僅替換前三個檔案。
+
+筆記使用既有的 `swiss-winter-notes-v1` localStorage key，原瀏覽器資料可繼續使用；保險起見，可先從舊版網站匯出筆記 JSON 做備份。
